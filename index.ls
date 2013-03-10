@@ -1,4 +1,3 @@
-phantom-proxy 	= require 'phantom-proxy'
 useragent		= require 'useragent'
 child_process   = require "child_process"
 exec            = child_process.exec

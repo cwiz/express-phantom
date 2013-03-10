@@ -1,6 +1,5 @@
 (function(){
-  var phantomProxy, useragent, child_process, exec;
-  phantomProxy = require('phantom-proxy');
+  var useragent, child_process, exec;
   useragent = require('useragent');
   child_process = require("child_process");
   exec = child_process.exec;
