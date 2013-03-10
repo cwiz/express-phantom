@@ -2,9 +2,9 @@ phantom = require 'phantom'
 
 fullUrl = process.argv[2]
 
-ph 		<- phantom.create
+ph		<- phantom.create
 page 	<- ph.createPage
-status 	<- page.open fullUrl
+status	<- page.open fullUrl
 
 page.evaluate (-> document.documentElement.outerHTML), (result) ->
 	console.log result
