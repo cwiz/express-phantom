@@ -8,7 +8,7 @@
         return page.evaluate(function(){
           return document.documentElement.innerHTML;
         }, function(result){
-          console.log(result);
+          console.log("<html>" + result + "</html>");
           return ph.exit();
         });
       });
