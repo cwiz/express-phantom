@@ -2,10 +2,18 @@ phantom = require 'phantom'
 
 fullUrl = process.argv[2]
 
-ph		<- phantom.create
+if not fullUrl
+	process.stderr.write "no url supplied\n" 
+	process.exit!
+
+ph		<- phantom.create '--load-images=no'
 page 	<- ph.createPage
 status	<- page.open fullUrl
 
+if status is \fail
+	process.stderr.write "could not open url\n" 
+	process.exit!
+
 page.evaluate (-> document.documentElement.outerHTML), (result) ->
-	console.log result
+	process.stdout.write result + '\n'
 	ph.exit!
