@@ -1,0 +1,16 @@
+lib-cov
+*.seed
+*.log
+*.out
+*.pid
+*.gz
+Cakefile.js
+package.js
+
+pids
+logs
+results
+node_modules
+
+npm-debug.log
+.DS_Store

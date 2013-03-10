@@ -1,0 +1,9 @@
+{
+    "name": "node-phantom"
+  , "version": "0.0.1"
+  , "private": false
+  , "dependencies": {
+      "phantom"   : "*",
+      "useragent" : "*"
+  }
+}
