@@ -6,9 +6,9 @@
     return ph.createPage(function(page){
       return page.open(fullUrl, function(status){
         return page.evaluate(function(){
-          return document.documentElement.innerHTML;
+          return document.documentElement.outerHtml;
         }, function(result){
-          console.log("<html>" + result + "</html>");
+          console.log(result);
           return ph.exit();
         });
       });
