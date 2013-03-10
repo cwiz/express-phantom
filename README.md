@@ -1,7 +1,7 @@
 express-phantom
 ===============
 
-This middleware tests user agent against known browsers using useragent npm module. If no browser detected it renders the page using phantomjs.
+express-phantom middleware tests user agent against known browsers using useragent npm module. If no browser detected it renders the page using phantomjs.
 
 1. Install phantomjs
 
