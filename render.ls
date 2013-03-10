@@ -6,6 +6,6 @@ ph 		<- phantom.create
 page 	<- ph.createPage
 status 	<- page.open fullUrl
 
-page.evaluate (-> document.documentElement.outerHtml), (result) ->
+page.evaluate (-> document.documentElement.outerHTML), (result) ->
 	console.log result
 	ph.exit!

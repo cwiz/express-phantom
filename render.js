@@ -6,7 +6,7 @@
     return ph.createPage(function(page){
       return page.open(fullUrl, function(status){
         return page.evaluate(function(){
-          return document.documentElement.outerHtml;
+          return document.documentElement.outerHTML;
         }, function(result){
           console.log(result);
           return ph.exit();
